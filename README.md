@@ -13,7 +13,7 @@ A platform for educated unemployed individuals across India to connect, share ex
 
 ## Project Structure
 
-\`\`\`
+```
 hum-bhi-berozgar/
 ├── server.js                 # Express.js backend server
 ├── public/                   # Frontend assets
@@ -31,7 +31,7 @@ hum-bhi-berozgar/
 │   └── seed-database.js     # Database seeding script
 ├── package.json             # Node.js dependencies
 └── README.md               # Project documentation
-\`\`\`
+```
 
 ## Installation & Setup
 
