@@ -36,43 +36,43 @@ hum-bhi-berozgar/
 ## Installation & Setup
 
 1. **Clone the repository**
-   \`\`\`bash
+   ```bash
    git clone `<repository-url>`
    cd hum-bhi-berozgar
-   \`\`\`
+   ```
 2. **Install dependencies**
-   \`\`\`bash
+   ```bash
    npm install
-   \`\`\`
+   ```
 3. **Set up MongoDB**
 
    - Install MongoDB locally or use MongoDB Atlas
    - Set the `MONGODB_URI` environment variable
 4. **Seed the database** (optional)
-   \`\`\`bash
+   ```bash
    npm run seed
-   \`\`\`
+   ```
 5. **Start the server**
-   \`\`\`bash
+   ```bash
    npm start
 
    # or for development
 
    npm run dev
-   \`\`\`
+   ```
 6. **Open in browser**
-   \`\`\`
+   ```
    http://localhost:3000
-   \`\`\`
+   ```
 
 ## Environment Variables
 
 Create a `.env` file in the root directory:
 
-\`\`\`env
+```env
 MONGODB_URI=mongodb://localhost:27017
 PORT=3000
-\`\`\`
+```
 
 ## API Endpoints
 
@@ -118,7 +118,7 @@ PORT=3000
 
 ### Users Collection
 
-\`\`\`javascript
+```javascript
 {
   _id: ObjectId,
   name: String (required),
@@ -127,7 +127,7 @@ PORT=3000
   year: String (required),
   registeredAt: ISODate (required)
 }
-\`\`\`
+```
 
 ### Indexes
 
@@ -157,7 +157,7 @@ If you encounter any issues or have questions:
 
 ## Acknowledgments
 
-- Built with ❤️ for the Indian community
+- Built with ❤ for the Indian community
 - Inspired by the need to connect educated unemployed individuals
 - Thanks to all contributors and users
 
