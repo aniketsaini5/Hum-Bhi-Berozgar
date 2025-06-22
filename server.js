@@ -6,7 +6,7 @@ require("dotenv").config()
 
 const app = express()
 const PORT =  3000
-const MONGODB_URI =  "mongodb+srv://2209301058aniket:Qs0dMbQZc7Sndrau@cluster0.mgyvn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+const MONGODB_URI =  "mongodb+srv://2209301058aniket:saini123aniket@cluster0.mgyvn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 const DB_NAME = "hum_bhi_berozgar"
 
 let client = null
