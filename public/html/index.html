@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="hi-IN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hum Bhi Berozgar - हम भी बेरोजगार</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+  <header class="header">
+    <div class="container">
+        <div class="nav-brand">
+            <h1>
+                <i class="fas fa-graduation-cap" style="color: #ff6b35;"></i>
+                Hum Bhi Berozgar
+            </h1>
+        </div>
+        <nav class="nav-menu hero-buttons-mobile">
+            <a href="/register" class="btn btn-primary btn-large">Register Karo</a>
+            <a href="/users" class="btn btn-outline btn-large">Community Dekho</a>
+        </nav>
+    </div>
+</header>
+
+    <!-- Hero Section -->
+    <main class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">हम भी बेरोजगार</h2>
+                <p class="hero-subtitle">We Are Also Unemployed</p>
+                <p class="hero-description">
+                    India bhar ke educated unemployed logo ka platform hai yeh! 
+                    Yahan aap apne jaisi situation wale logo se mil sakte hain, 
+                    experiences share kar sakte hain aur ek strong community bana sakte hain.
+                </p>
+                <div class="hero-buttons">
+                    <a href="/register" class="btn btn-primary btn-large">
+                        <i class="fas fa-user-plus"></i>
+                        Abhi Register Karo
+                    </a>
+                    <a href="/users" class="btn btn-outline btn-large">
+                        <i class="fas fa-users"></i>
+                        Community Browse Karo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Apne Jaiso Se Milo</h3>
+                    <p>Same educational background aur similar problems wale logo se connect karo across India.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Education Share Karo</h3>
+                    <p>Apni degree, college aur graduation year share karke meaningful connections banao.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>India-Focused Platform</h3>
+                    <p>Specially Indian job market aur education system ke liye designed hai yeh platform.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats">
+        <div class="container">
+            <h3 class="stats-title">Growing Community Join Karo!</h3>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">1000+</div>
+                    <div class="stat-label">Registered Users</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Colleges Represented</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">28</div>
+                    <div class="stat-label">States Covered</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Degree Types</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Hum Bhi Berozgar</span>
+                </div>
+                <p>India bhar ke educated unemployed individuals ko connect karta hai</p>
+                <p id ="copyright-text"></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <script>  
+          // Current year set karo
+  const year = new Date().getFullYear();
+  document.getElementById("copyright-text").innerHTML =
+    `© ${year} Hum Bhi Berozgar. Made with ❤️ for India.`;
+    </script>
+</body>
+</html>

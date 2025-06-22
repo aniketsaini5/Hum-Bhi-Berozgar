@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="hi-IN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Karo - Hum Bhi Berozgar</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="/">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h1>Hum Bhi Berozgar</h1>
+                </a>
+            </div>
+            <nav class="nav-menu">
+                <a href="/" class="btn btn-outline">
+                    <i class="fas fa-arrow-left"></i>
+                    Home Wapas
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Registration Form -->
+    <main class="register-main">
+        <div class="container">
+            <div class="register-container">
+                <div class="register-card">
+                    <div class="register-header">
+                        <h2>Hamare Community Join Karo!</h2>
+                        <p>Register karke India bhar ke educated unemployed logo se connect karo</p>
+                    </div>
+                    
+                    <form id="registerForm" class="register-form">
+                        <div class="form-group">
+                            <label for="name">Poora Naam *</label>
+                            <input type="text" id="name" name="name" placeholder="Apna poora naam enter karo" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="degree">Highest Educational Degree *</label>
+                            <select id="degree" name="degree" required>
+                                <option value="">Apni highest degree select karo</option>
+                                <option value="B.Tech/B.E.">B.Tech/B.E.</option>
+                                <option value="B.Sc.">B.Sc.</option>
+                                <option value="B.Com.">B.Com.</option>
+                                <option value="B.A.">B.A.</option>
+                                <option value="BBA">BBA</option>
+                                <option value="BCA">BCA</option>
+                                <option value="M.Tech/M.E.">M.Tech/M.E.</option>
+                                <option value="M.Sc.">M.Sc.</option>
+                                <option value="M.Com.">M.Com.</option>
+                                <option value="M.A.">M.A.</option>
+                                <option value="MBA">MBA</option>
+                                <option value="MCA">MCA</option>
+                                <option value="Ph.D.">Ph.D.</option>
+                                <option value="Diploma">Diploma</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="college">College/University *</label>
+                            <input type="text" id="college" name="college" placeholder="Apne college ya university ka naam enter karo" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="year">Degree Complete Karne Ka Year *</label>
+                            <select id="year" name="year" required>
+                                <option value="">Graduation year select karo</option>
+                            </select>
+                        </div>
+
+                        <!-- CAPTCHA -->
+                        <div class="captcha-section">
+                            <label class="captcha-label">Human Verification (CAPTCHA) *</label>
+                            <div class="captcha-container">
+                                <div class="captcha-question" id="captchaQuestion">5 + 3 = ?</div>
+                                <input type="number" id="captchaAnswer" placeholder="Answer" required>
+                                <button type="button" id="refreshCaptcha" class="btn-refresh">
+                                    <i class="fas fa-sync-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div id="message" class="message"></div>
+
+                        <button type="submit" id="submitBtn" class="btn btn-primary btn-full">
+                            <i class="fas fa-user-plus"></i>
+                            Register Karo
+                        </button>
+                    </form>
+
+                    <div class="register-footer">
+                        <p>Already registered ho? 
+                            <a href="/users">Community members dekho</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/register.js"></script>
+</body>
+</html>

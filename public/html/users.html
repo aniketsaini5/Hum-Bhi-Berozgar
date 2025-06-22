@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="hi-IN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Members - Hum Bhi Berozgar</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="/">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h1>Hum Bhi Berozgar</h1>
+                </a>
+            </div>
+            <nav class="nav-menu">
+                <a href="/" class="btn btn-outline">
+                    <i class="fas fa-home"></i>
+                    Home
+                </a>
+                <a href="/register" class="btn btn-primary">Register Karo</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="users-main">
+        <div class="container">
+            <div class="users-header">
+                <h2>Community Members</h2>
+                <p id="userCount">Loading members...</p>
+            </div>
+
+            <!-- Filters -->
+            <div class="filters-card">
+                <h3><i class="fas fa-search"></i> Search & Filter Karo</h3>
+                <div class="filters-grid">
+                    <div class="filter-group">
+                        <input type="text" id="searchInput" placeholder="Naam ya college se search karo...">
+                    </div>
+                    <div class="filter-group">
+                        <select id="degreeFilter">
+                            <option value="">Saari degrees</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <select id="yearFilter">
+                            <option value="">Saale years</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <button id="clearFilters" class="btn btn-outline btn-full">
+                            <i class="fas fa-times"></i>
+                            Clear Filters
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Statistics -->
+            <div class="stats-cards">
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <div class="stat-number" id="foundMembers">0</div>
+                    <div class="stat-label">Members Mile</div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div class="stat-number" id="uniqueDegrees">0</div>
+                    <div class="stat-label">Different Degrees</div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-calendar"></i>
+                    <div class="stat-number" id="uniqueYears">0</div>
+                    <div class="stat-label">Graduation Years</div>
+                </div>
+            </div>
+
+            <!-- Loading State -->
+            <div id="loadingState" class="loading-state">
+                <div class="spinner"></div>
+                <p>Community members load ho rahe hain...</p>
+            </div>
+
+            <!-- No Users State -->
+            <div id="noUsersState" class="no-users-state" style="display: none;">
+                <div class="no-users-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Koi members nahi mile</h3>
+                    <p id="noUsersMessage">Pehle aap join karo hamare community!</p>
+                    <a href="/register" class="btn btn-primary">
+                        <i class="fas fa-user-plus"></i>
+                        Register Karo
+                    </a>
+                </div>
+            </div>
+
+            <!-- Users Grid -->
+            <div id="usersGrid" class="users-grid" style="display: none;">
+                <!-- Users will be populated by JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/users.js"></script>
+</body>
+</html>
